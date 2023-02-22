@@ -98,7 +98,7 @@ section {
     height: 60px;
     width: 60px;
     display: inline-block;
-    border: 3px solid rgb(87, 10, 10);
+    border: 3px solid #49274A;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -116,7 +116,7 @@ section {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid palevioletred;
+    border: 3px solid #49274A;
     animation: hamburger_puls 1s ease infinite;
 }
 
@@ -124,7 +124,7 @@ section {
     height: 2px;
     width: 30px;
     position: relative;
-    background-color: white;
+    background-color: #49274A;
     z-index: -1;
 }
 
@@ -135,7 +135,7 @@ section {
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: rgb(24, 117, 37);
+    background-color: #94618E;
     transition: .3s ease;
     transition-property: top, bottom;
 }
@@ -219,11 +219,11 @@ section {
 }
 
 .button {
+    display: inline-block;
     text-decoration: none;
-    text-align: center;
-    background-color: #94618E;
-    color: white;
+    border: 2px solid #49274A;
     font-size: 1.5rem;
+    color: #94618E;
     border-radius: .5rem;
     font-weight: 800;
     cursor: pointer;
@@ -231,6 +231,7 @@ section {
 
 .button:hover {
     background-color: #49274A;
+    color: white;
 }
 
 .home-scroll {
@@ -243,6 +244,11 @@ section {
     color: black;
 }
 
+.scrolldown:hover {
+    color: #49274A;
+    font-weight: 900;
+}
+
 /* media  */
 @media (max-width: 650px) {
     .home_container {
@@ -253,4 +259,43 @@ section {
         text-align: center;
     }
 }
+
+/* services */
+#services {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+}
+
+.services_container {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+}
+
+.service-item{
+    padding: 3.5rem .5rem;
+    flex-basis: 80%;
+    background-color: #F8EEE7;
+    border-radius: 10px;
+    margin: 10px 2%;
+}
+
+#icon {
+    font-size: 3rem;
+}
+
 
