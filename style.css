@@ -40,7 +40,7 @@ section {
 
 #header .nav-list ul {
     list-style: none;
-    position: absolute;
+    position: fixed;
     background-color: rgb(31, 30, 30);
     width: 100vw;
     height: 100vh;
@@ -223,7 +223,7 @@ section {
     text-decoration: none;
     border: 2px solid #49274A;
     font-size: 1.5rem;
-    color: #94618E;
+    color: #49274A;
     border-radius: .5rem;
     font-weight: 800;
     cursor: pointer;
@@ -298,4 +298,27 @@ section {
     font-size: 3rem;
 }
 
+/* End .service */
 
+/* aboutme section */
+.about-section {
+    background-color: #94618E;
+}
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+#about {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 15%;
+}
+
+#about p {
+    font-size: 1.25rem;
+    margin-bottom: 5%;
+}
