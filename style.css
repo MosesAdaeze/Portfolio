@@ -291,11 +291,18 @@ section {
     flex-basis: 80%;
     background-color: #F8EEE7;
     border-radius: 10px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
     margin: 10px 2%;
 }
 
 #icon {
     font-size: 3rem;
+}
+
+@media (max-width: 630px) {
+    .services_container {
+        flex-direction: column;
+    }
 }
 
 /* End .service */
@@ -322,3 +329,128 @@ section {
     font-size: 1.25rem;
     margin-bottom: 5%;
 }
+
+/* ENd aboutme section */
+.contact-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 50px 15%;
+}
+
+#contact .contact {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .contact-content {
+    /* display: flex; */
+    width: 500px;
+}
+
+#contact .contact-items {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F8EEE7;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-items:hover {
+    box-shadow: 0px 0px 18px 0 #0000004c;
+}
+
+
+
+#contact .icon {
+    font-size: 2.5rem;
+}
+
+#contact .contact-info h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+/* contact me section  */
+/* #contact .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* #contact .contact-items {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+} */
+
+/* footer */
+.footer {
+    background-color: #49274A;
+    color: white;
+    padding: 5% 5%;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-title span {
+    color: #94618E;
+}
+
+.footer-details {
+    margin: 0 10%;
+}
+
+.footer-title {
+    font-size: 1.5em;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.footer-socials .-icon,
+.footer-socials a {
+    padding-top: 3%;
+    font-size: 2rem;
+    text-decoration: none;
+    color:#94618E;
+}
+
+@media (max-width: 630px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+/* endfooter */
