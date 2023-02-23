@@ -7,6 +7,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* head */
+.head {
+    width: 100%;
+    height: 5px;
+    background-color: #49274A;
+}
+/* head */
+
+
+/* Header section */
+
 .brand h1{
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
@@ -191,6 +203,8 @@ section {
     }
 
 }
+/* keyframes */
+/* ENd header section */
 
 /* HOME */
 .home_container {
@@ -259,6 +273,8 @@ section {
         text-align: center;
     }
 }
+
+/* ENd Home section  */
 
 /* services */
 #services {
@@ -331,30 +347,36 @@ section {
 }
 
 /* ENd aboutme section */
+
+/* contact me section */
+
 .contact-title {
     text-align: center;
     font-size: 3.5rem;
-    font-weight: 300;
+    font-weight: 500;
     color: black;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    padding: 50px 15%;
+    padding: 70px 10%;
 }
 
 #contact .contact {
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
 }
 
-#contact .contact-content {
-    /* display: flex; */
-    width: 500px;
+.contact-content {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact .contact-items {
-    width: 80%;
-    padding: 20px;
+    width: 400px; 
     text-align: center;
     border-radius: 10px;
     padding: 30px;
@@ -368,14 +390,27 @@ section {
     transition: .3s ease box-shadow;
 }
 
+@media (max-width: 1200px) {
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }   
+} 
 #contact .contact-items:hover {
     box-shadow: 0px 0px 18px 0 #0000004c;
 }
 
-
-
 #contact .icon {
-    font-size: 2.5rem;
+    font-size: 2.50rem;
+    color: #49274A;
+    font-weight: 900;
+}
+
+
+#contact .icons {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }
 
 #contact .contact-info h1{
@@ -387,23 +422,11 @@ section {
 #contact .contact-info h2{
     font-size: 1.3rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
+ /* End contact section */
 
-/* contact me section  */
-/* #contact .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* #contact .contact-items {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
-} */
 
 /* footer */
 .footer {
@@ -445,12 +468,5 @@ section {
         flex-direction: column;
     }
 }
-
-
-
-
-
-
-
 
 /* endfooter */
