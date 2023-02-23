@@ -37,10 +37,6 @@ span {
     font-weight: 2000;
 }
 
-section {
-    border-bottom: 2px solid #49274A;
-}
-
 #header .nav-bar {
     display: flex;
     align-items: center;
@@ -273,6 +269,12 @@ section {
 
     .home_data {
         text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-image {
+        width: 50%;
     }
 }
 
