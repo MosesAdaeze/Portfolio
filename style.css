@@ -341,7 +341,7 @@ span {
 #project {
     text-align: center;
     margin: 0 auto;
-    padding: 160px 0;
+    padding: 70px 0;
 }
 
 .project-subtitle {
@@ -352,9 +352,10 @@ span {
     display: flex;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 50px;
     padding: 4% 2%;
     box-sizing: border-box;
-    height: 100vh;
+    height: 80vh;
     background-color: #F4DECB;
 }
 
@@ -362,7 +363,7 @@ span {
     flex: 1;
     overflow: hidden;
     transition: .5s;
-    margin: 0 2%;
+    margin: 0 1.5%;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
     line-height: 0;
 }
@@ -388,9 +389,10 @@ span {
     height: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .project-content {
         flex-direction: column;
+        height: 100vh;
     }
 }
 
