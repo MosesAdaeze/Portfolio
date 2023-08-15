@@ -6,13 +6,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    /* background-color: #041C32; */
+    /* background-color: #071624; */
+    background-color: #061422;
 }
 
 
 /* head */
 .head {
     width: 100%;
-    height: 5px;
+    height: 7px;
     background-color: #49274A;
 }
 /* head */
@@ -44,7 +47,7 @@ span {
     width: 100%;
     height: 100%;
     max-width: 1700px;
-    padding: 1% 10px;
+    padding: 1% 4rem;
 }
 
 #header .nav-list ul {
@@ -77,7 +80,7 @@ span {
     text-decoration: none;
     color: #94618E;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 15px;
     display: block;
 }
 
@@ -209,6 +212,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* color: rgb(245, 224, 224); */
+    color: #DDE6ED;
 }
 
 .home_data {
@@ -253,7 +258,7 @@ span {
 .scrolldown {
     text-decoration: none;
     font-size: 1.25rem;
-    color: black;
+    color: #DDE6ED;
 }
 
 .scrolldown:hover {
@@ -290,7 +295,7 @@ span {
 .section-title {
     font-size: 3.5rem;
     font-weight: 300;
-    color: black;
+    color: #DDE6ED;
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -309,7 +314,8 @@ span {
 .service-item{
     padding: 3.5rem .5rem;
     flex-basis: 80%;
-    background-color: #F8EEE7;
+    color: #DDE6ED;
+    /* background-color: #F8EEE7; */
     border-radius: 10px;
     box-shadow: 0px 0px 18px 0 #0000002c;
     margin: 10px 2%;
@@ -332,7 +338,7 @@ span {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
-    color: black;
+    color: #DDE6ED;
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -401,12 +407,13 @@ span {
 
 /* aboutme section */
 .about-section {
-    background-color: #94618E;
+    color: #DDE6ED;
+    /* background-color: #94618E; */
 }
 .about-title {
     font-size: 3.5rem;
     font-weight: 300;
-    color: black;
+    color: #DDE6ED;
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
@@ -427,10 +434,10 @@ span {
 /* contact me section */
 
 .contact-title {
+    color: #DDE6ED;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 500;
-    color: black;
     text-transform: uppercase;
     letter-spacing: .2rem;
     padding: 50px 10%;
@@ -452,6 +459,7 @@ span {
 }
 
 #contact .contact-items {
+    color: #DDE6ED;
     width: 400px; 
     text-align: center;
     border-radius: 10px;
@@ -461,7 +469,7 @@ span {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-color: #F8EEE7;
+    /* background-color: #F8EEE7; */
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: .3s ease box-shadow;
 }
@@ -507,7 +515,7 @@ span {
 
 /* footer */
 .footer {
-    background-color: #49274A;
+    /* background-color: #49274A; */
     color: white;
     padding: 5% 5%;
 }
@@ -538,6 +546,10 @@ span {
     font-size: 2rem;
     text-decoration: none;
     color:#94618E;
+}
+
+.footer-content p {
+    padding-bottom: 3rem;
 }
 
 @media (max-width: 630px) {
