@@ -36,7 +36,7 @@
 }
 
 span {
-    color: #49274A;
+    color: #94618E;
     font-weight: 2000;
 }
 
@@ -53,7 +53,7 @@ span {
 #header .nav-list ul {
     list-style: none;
     position: fixed;
-    background-color: rgb(31, 30, 30);
+    /* background-color: rgb(31, 30, 30); */
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -84,6 +84,22 @@ span {
     display: block;
 }
 
+#header .nav-list li {
+    position: relative;
+}
+
+#header .nav-list li a.active::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #49274A;
+}
+
+#header .nav-list li a.active::after {
+    width: 100%;
+}
+
 #header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
@@ -95,6 +111,10 @@ span {
     letter-spacing: 50px;
     z-index: -1;
     transition: .3s ease letter-spacing;
+}
+
+#header .nav-list ul a.active {
+    color: #49274A;
 }
 
 #header .nav-list ul li:hover a::after {
