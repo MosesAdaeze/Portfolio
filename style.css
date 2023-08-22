@@ -430,47 +430,67 @@ span {
     letter-spacing: .2rem;
 }
 
-.about_note p {
-    /* width: 30%; */
-}
-
-#about {
-    text-align: center;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-#about p {
-    font-size: 1.25rem;
-    margin-bottom: 3%;
-}
-
 .about_imag img {
     width: 30vw;
     border-radius: 10%;
 }
 
+.iconNote {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-bottom: 4rem;
+}
+
+.iconNote li {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #DDE6ED;
+    font: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    letter-spacing: .1rem;
+}
+
 /* ENd aboutme section */
 
-/* contact me section */
+/* CONTACT me section */
 
-.contact-title {
+#section {
+    height: 50vh;
+    width: 50vw;
+    background-color: #49274A;
+    margin: auto;
+}
+
+.contact_container {
+    display: flex;
+    align-items: center;
+}
+
+.contact_content {
     color: #DDE6ED;
-    text-align: center;
-    font-size: 3.5rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
     padding: 50px 10%;
 }
 
-#contact .contact {
+.socials li {
+    list-style: none;
+}
+
+/* .contact-container {
     flex-direction: column;
     padding: 100px 0;
     align-items: center;
     justify-content: center;
     min-width: 20vh;
-}
+} */
 
 .contact-content {
     padding: 15px 0;
