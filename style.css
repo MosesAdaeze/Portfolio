@@ -15,7 +15,7 @@
 /* head */
 .head {
     width: 100%;
-    height: 7px;
+    height: 12px;
     background-color: #49274A;
 }
 /* head */
@@ -82,22 +82,6 @@ span {
     text-transform: uppercase;
     padding: 15px;
     display: block;
-}
-
-#header .nav-list li {
-    position: relative;
-}
-
-#header .nav-list li a.active::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    background-color: #49274A;
-}
-
-#header .nav-list li a.active::after {
-    width: 100%;
 }
 
 #header .nav-list ul a::after {
@@ -425,17 +409,29 @@ span {
 /* end recent section */
 
 
-/* aboutme section */
-.about-section {
-    color: #DDE6ED;
-    /* background-color: #94618E; */
+/* ABOUT MEsection */
+#about_container {
+    padding-top: 8rem;
 }
-.about-title {
+
+.about_content {
+    /* padding: 0 0 0 5rem; */
+    color: #DDE6ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about_note h2{
     font-size: 3.5rem;
     font-weight: 300;
-    color: #DDE6ED;
     text-transform: uppercase;
     letter-spacing: .2rem;
+}
+
+.about_note p {
+    /* width: 30%; */
 }
 
 #about {
@@ -447,6 +443,11 @@ span {
 #about p {
     font-size: 1.25rem;
     margin-bottom: 3%;
+}
+
+.about_imag img {
+    width: 30vw;
+    border-radius: 10%;
 }
 
 /* ENd aboutme section */
