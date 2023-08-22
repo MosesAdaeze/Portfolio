@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
     /* background-color: #041C32; */
     /* background-color: #071624; */
+    /* background-color: #061422; */
+}
+
+body {
     background-color: #061422;
 }
 
@@ -440,7 +444,7 @@ span {
     display: flex;
     justify-content: center;
     gap: 6rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 .iconNote li {
@@ -455,65 +459,70 @@ span {
     letter-spacing: .1rem;
 }
 
+
 /* ENd aboutme section */
 
 /* CONTACT me section */
 
+.contact_container {
+    border-radius: 10px;
+}
+
 #section {
-    height: 50vh;
-    width: 50vw;
+    height: 50%;
+    width: 50%;
     background-color: #49274A;
     margin: auto;
 }
 
-.contact_container {
+.contact_content {
+    border-radius: 20px;
+    padding: 2rem;
     display: flex;
     align-items: center;
-}
-
-.contact_content {
+    gap: 3rem;
+    background-color: #49274A;
     color: #DDE6ED;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    padding: 50px 10%;
-}
-
-.socials li {
-    list-style: none;
-}
-
-/* .contact-container {
-    flex-direction: column;
-    padding: 100px 0;
-    align-items: center;
-    justify-content: center;
-    min-width: 20vh;
-} */
-
-.contact-content {
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact .contact-items {
-    color: #DDE6ED;
-    width: 400px; 
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    /* background-color: #F8EEE7; */
     box-shadow: 0px 0px 18px 0 #0000002c;
-    transition: .3s ease box-shadow;
 }
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    float: left;
+    width: 80%;
+    height: auto;
+}
+
+.textbox input {
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.textbox textarea {
+    border-radius: 10px;
+    height: 20vh;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.social_icons li{
+    font-size: 1.5rem;
+    list-style: none;
+    transition: 1s ease;
+}
+
+.social_icons li:hover {
+    font-size: 1.7rem;
+}
+
+ /* END CONTACT SECTION ---------  */
 
 @media (max-width: 1200px) {
     .contact-content {
@@ -556,6 +565,7 @@ span {
 
 /* footer */
 .footer {
+    margin-top: 10rem;
     /* background-color: #49274A; */
     color: white;
     padding: 5% 5%;
