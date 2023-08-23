@@ -252,7 +252,7 @@ span {
     text-decoration: none;
     border: 2px solid #49274A;
     font-size: 1.5rem;
-    color: #49274A;
+    color: #DDE6ED;
     border-radius: .6rem;
     font-weight: 800;
     cursor: pointer;
@@ -276,7 +276,7 @@ span {
 }
 
 .scrolldown:hover {
-    color: #49274A;
+    color: #94618E;
     font-weight: 900;
 }
 
@@ -447,7 +447,7 @@ span {
 }
 
 .about_imag img {
-    border-radius: 10%;
+    border-radius: 6%;
     width: 400px;
     height: 400px;
 }
