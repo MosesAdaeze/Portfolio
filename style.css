@@ -263,8 +263,10 @@ span {
     color: white;
 }
 
-.home-scroll {
-    margin-top: 10%;
+.home-scroll,
+.home-scroll a {
+    margin: 5rem 0 0 2rem;
+    font-size: 1.1rem;
 }
 
 .scrolldown {
@@ -438,13 +440,36 @@ span {
     letter-spacing: .2rem;
 }
 
+.about_imag {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
 .about_imag img {
-    width: 30vw;
     border-radius: 10%;
+    width: 400px;
+    height: 400px;
+}
+
+.top-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.top-img:hover {
+    opacity: 1;
+}
+
+#image:hover {
+    background-image: url(image/mypics2.JPG);
 }
 
 .iconNote {
-    padding-top: 6rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 6rem;
