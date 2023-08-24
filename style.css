@@ -235,25 +235,11 @@ span {
 
 .home-description {
     font-size: 1.2rem;
-}
-
-.home_social {
-    margin-bottom: 3%;
-}
-
-.home_social-icon {
-    font-size: 1.50rem;
-    color: #94618E;
-    font-weight: 600;
-}
-
-.home_social-icon:hover {
-    color: #49274A;
-    font-weight: 900;
+    margin-bottom: 3rem;
 }
 
 .button {
-    padding: 0.3rem;
+    padding: 0.8rem;
     display: inline-block;
     text-decoration: none;
     border: 2px solid #49274A;
@@ -431,7 +417,7 @@ span {
 }
 
 .about_content {
-    /* padding: 0 0 0 5rem; */
+    padding: 0 5rem 0 8rem;
     color: #DDE6ED;
     display: flex;
     justify-content: center;
@@ -439,23 +425,30 @@ span {
     gap: 4rem;
 }
 
+
 .about_note h2{
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2rem;
 }
 
+.about_note p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
 .about_imag {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     position: relative;
 }
 
 .about_imag img {
     border-radius: 6%;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 }
 
 .top-img {
