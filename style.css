@@ -213,6 +213,7 @@ span {
     }
 
 }
+
 /* keyframes */
 /* ENd header section */
 
@@ -257,7 +258,7 @@ span {
 
 .home-scroll,
 .home-scroll a {
-    margin: 5rem 0 0 2rem;
+    margin: 3.5rem 0 0 2rem;
     font-size: 1.1rem;
 }
 
@@ -417,7 +418,7 @@ span {
 }
 
 .about_content {
-    padding: 0 5rem 0 8rem;
+    padding: 0 2rem 0 2rem;
     color: #DDE6ED;
     display: flex;
     justify-content: center;
@@ -431,6 +432,12 @@ span {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2rem;
+}
+
+.about_note span {
+    color: #bdd9ee;
+    font-style: oblique;
+    font-weight: 600;
 }
 
 .about_note p {
@@ -467,8 +474,30 @@ span {
     background-image: url(image/mypics2.JPG);
 }
 
+
+/* ----- RWD ABOUT SECTION ---------------  */
+@media (max-width: 1274px) {
+    .about_content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about_imag {
+        width: 400px;
+        height: 400px;
+    }
+    .about_imag img {
+        width: 400px;
+        height: 400px;
+    }
+    .about_note {
+        text-align: center;
+    }
+}
+/* ---------------- END ABOUT SECTION ---------------  */
+
+/* -------------- ICON NOTE SECTION ------------  */
 .iconNote {
-    padding-top: 1rem;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 6rem;
@@ -487,8 +516,7 @@ span {
     letter-spacing: .1rem;
 }
 
-
-/* ENd aboutme section */
+/* -------------- END ICON NOTE SECTION ------------  */
 
 /* CONTACT me section */
 
@@ -553,63 +581,43 @@ span {
 .btn {
     font-weight: 500;
     border-radius: 10px;
-    width: 20%;
+    width: 23%;
     padding: 0.5rem;   
     cursor: pointer; 
 }
 
- /* END CONTACT SECTION ---------  */
+/* ----- RWD ABOUT SECTION ---------------  */
 
-@media (max-width: 1200px) {
-    .contact-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }   
+@media (max-width: 1126px) {
+    #section {
+        width: 80%;
+        height: 50%;
+    }
+    
+    .btn {
+        width: 29%;
+        padding: 0.3rem;
+    }
 } 
-#contact .contact-items:hover {
-    box-shadow: 0px 0px 18px 0 #0000004c;
-}
 
-#contact .icon {
-    font-size: 2.50rem;
-    color: #49274A;
-    font-weight: 900;
-}
-
-
-#contact .icons {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-}
-
-#contact .contact-info h1{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-#contact .contact-info h2{
-    font-size: 1.3rem;
-    font-weight: 500;
-    cursor: pointer;
-}
-
- /* End contact section */
+ /* END CONTACT SECTION ---------  */
 
 
 /* footer */
 .footer {
     margin-top: 10rem;
-    /* background-color: #49274A; */
     color: white;
     padding: 5% 5%;
 }
+
 .footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-content img {
+    width: 35%;
 }
 
 .footer-title span {
@@ -639,9 +647,16 @@ span {
     padding-bottom: 3rem;
 }
 
+@media (max-width: 982px) {
+    .footer-content img {
+        width: 37%;
+    }
+}
+
 @media (max-width: 630px) {
     .footer-content {
         flex-direction: column;
+        margin-bottom: 2px;
     }
 }
 
