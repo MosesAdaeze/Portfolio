@@ -95,7 +95,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: rgba(240,248, 255, 0.021) ;
-    font-size: 10rem;
+    /* font-size: 10rem; */
     letter-spacing: 50px;
     z-index: -1;
     transition: .3s ease letter-spacing;
@@ -111,7 +111,7 @@ span {
 }
 
 #header .nav-list ul li a:hover{
-    color: #49274A;
+    font-size: 1.1rem;
     font-weight: 900;
 }
 
@@ -447,15 +447,15 @@ span {
 }
 
 .about_imag {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     position: relative;
 }
 
 .about_imag img {
     border-radius: 6%;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
 }
 
 .top-img {
@@ -491,6 +491,9 @@ span {
     }
     .about_note {
         text-align: center;
+    }
+    .about_note h2 {
+        font-size: 1.7rem;
     }
 }
 /* ---------------- END ABOUT SECTION ---------------  */
