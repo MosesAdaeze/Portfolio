@@ -13,8 +13,16 @@
 
 body {
     background-color: #061422;
+    color: #DDE6ED;
 }
 
+/* button {
+    color: black;
+}
+
+a {
+    color: black;
+} */
 
 /* head */
 .head {
@@ -42,6 +50,11 @@ body {
 span {
     color: #94618E;
     font-weight: 2000;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
 }
 
 #header .nav-bar {
@@ -227,7 +240,6 @@ span {
 /* HOME */
 .home_container {
     margin: 5rem 2rem 0 2rem;
-    color: #DDE6ED;
     text-align: center;
 }
 
@@ -251,7 +263,6 @@ span {
     text-decoration: none;
     border: 2px solid #49274A;
     font-size: 1.5rem;
-    color: #DDE6ED;
     border-radius: .6rem;
     font-weight: 800;
     cursor: pointer;
@@ -271,7 +282,6 @@ span {
 .scrolldown {
     text-decoration: none;
     font-size: 1.25rem;
-    color: #DDE6ED;
 }
 
 .scrolldown:hover {
@@ -318,7 +328,6 @@ span {
 .section-title {
     font-size: 3.5rem;
     font-weight: 300;
-    color: #DDE6ED;
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -337,8 +346,6 @@ span {
 .service-item{
     padding: 3.5rem .5rem;
     flex-basis: 80%;
-    color: #DDE6ED;
-    /* background-color: #F8EEE7; */
     border-radius: 10px;
     box-shadow: 0px 0px 18px 0 #0000002c;
     margin: 10px 2%;
@@ -540,10 +547,16 @@ span {
 }
 
 /* ----- RWD ABOUT SECTION ---------------  */
-
-@media (max-width: 1126px) {
+@media (max-width: 1176px) {
     #section {
-        width: 80%;
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 1126px) {
+    #section {
+        width: 70%;
         height: 50%;
     }
 
@@ -554,6 +567,10 @@ span {
     .btn {
         width: 29%;
         padding: 0.3rem;
+    }
+
+    .about_imag {
+        padding: 0 2% 0 2%;
     }
 } 
 
