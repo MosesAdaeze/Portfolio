@@ -547,32 +547,42 @@ span {
 }
 
 /* ----- RWD ABOUT SECTION ---------------  */
-@media (max-width: 1176px) {
+/* @media (max-width: 1176px) {
     #section {
         width: 70%;
         height: 50%;
     }
-}
+} */
 
-@media (min-width: 1126px) {
+@media (max-width: 1646px) {
     #section {
         width: 70%;
-        height: 50%;
+    }
+} 
+
+@media (max-width: 670px) {
+    #section {
+        width: 80%;
+    }
+
+    .contact_content {
+        gap: 2rem;
+    }
+
+    .textbox {
+        width: 100%;
     }
 
     .textbox textarea {
         height: 25vh;
     }
-    
+
     .btn {
-        width: 29%;
+        width: 33%;
         padding: 0.3rem;
     }
+}
 
-    .about_imag {
-        padding: 0 2% 0 2%;
-    }
-} 
 
  /* END CONTACT SECTION ---------  */
 
