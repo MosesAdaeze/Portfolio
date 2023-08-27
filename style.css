@@ -439,12 +439,12 @@ span {
         justify-content: center;
     }
     .about_imag {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
     .about_imag img {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
     .about_note {
         text-align: center;
@@ -467,7 +467,6 @@ span {
 .iconNote li {
     text-transform: capitalize;
     font-size: 1.2rem;
-    color: #DDE6ED;
     font: 500;
     display: flex;
     align-items: center;
@@ -498,7 +497,6 @@ span {
     align-items: center;
     gap: 3rem;
     background-color: #49274A;
-    color: #DDE6ED;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -547,12 +545,6 @@ span {
 }
 
 /* ----- RWD ABOUT SECTION ---------------  */
-/* @media (max-width: 1176px) {
-    #section {
-        width: 70%;
-        height: 50%;
-    }
-} */
 
 @media (max-width: 1646px) {
     #section {
@@ -590,7 +582,6 @@ span {
 /* footer */
 .footer {
     margin-top: 10rem;
-    color: white;
     padding: 5% 5%;
 }
 
