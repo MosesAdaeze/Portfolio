@@ -594,6 +594,10 @@ span {
     #section {
         width: 86%;
     }
+    
+    .textbox {
+        width: 85%;
+    }
 }
 
  /* END CONTACT SECTION ---------  */
