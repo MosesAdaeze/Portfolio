@@ -15,8 +15,23 @@ menu_item.forEach(item=>{
     });
 });
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-  }
-   
+
+/// toggle Light mode and dark mode.
+
+const toggle = document.getElementById('toggle-dark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-moon-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }else{
+        body.style.background = '#061422';
+        body.style.color = '#DDE6ED';
+        body.style.transition = '2s';
+    }
+})
+
+

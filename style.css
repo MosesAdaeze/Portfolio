@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
     /* background-color: #041C32; */
     /* background-color: #071624; */
     /* background-color: #061422; */
@@ -14,15 +15,13 @@
 body {
     background-color: #061422;
     color: #DDE6ED;
+    text-decoration: none;
 }
 
-/* button {
-    color: black;
+button {
+    color: #DDE6ED;
 }
 
-a {
-    color: black;
-} */
 
 /* head */
 .head {
@@ -52,20 +51,14 @@ span {
     font-weight: 2000;
 }
 
-.light-mode {
-    background-color: white;
-    color: black;
-}
-
 #header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1700px;
-    padding: 1% 0 0 4rem;
-    /* padding: 1% 4rem; */
+    max-width: 1600px;
+    padding: 1% 2rem 0 4rem;
 }
 
 #header .nav-list ul {
@@ -127,6 +120,16 @@ span {
 #header .nav-list ul li a:hover{
     font-size: 1.1rem;
     font-weight: 900;
+}
+
+#header .nav-list ul li a.active:hover {
+    font-size: 1rem;
+}
+
+
+.bi {
+    font-size: 23px;
+    cursor: pointer;
 }
 
 #header .hamburger {
@@ -257,7 +260,8 @@ span {
     margin-bottom: 3rem;
 }
 
-.button {
+.button{
+    color: #94618E;
     padding: 0.8rem;
     display: inline-block;
     text-decoration: none;
@@ -268,6 +272,11 @@ span {
     cursor: pointer;
 }
 
+.button button {
+    background: transparent;
+    border: none;
+}
+
 .button:hover {
     background-color: #49274A;
     color: white;
@@ -275,6 +284,7 @@ span {
 
 .home-scroll,
 .home-scroll a {
+    color: #94618E;
     margin: 3.5rem 0 0 2rem;
     font-size: 1.1rem;
 }
@@ -376,7 +386,6 @@ span {
 
 .about_content {
     padding: 0 2rem 0 2rem;
-    color: #DDE6ED;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,7 +401,8 @@ span {
 }
 
 .about_note span {
-    color: #bdd9ee;
+    /* color: #bdd9ee; */
+    color: #9ec6e2 ;
     font-style: oblique;
     font-weight: 600;
 }
@@ -513,6 +523,10 @@ span {
     height: auto;
 }
 
+.textbox label {
+    color: #DDE6ED;
+}
+
 .textbox input {
     border-radius: 10px;
     font-size: 1rem;
@@ -537,6 +551,7 @@ span {
 }
 
 .btn {
+    color: #94618E;
     font-weight: 500;
     border-radius: 10px;
     width: 23%;
@@ -575,6 +590,11 @@ span {
     }
 }
 
+@media (max-width: 415px) {
+    #section {
+        width: 86%;
+    }
+}
 
  /* END CONTACT SECTION ---------  */
 
