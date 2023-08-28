@@ -64,7 +64,7 @@ span {
 #header .nav-list ul {
     list-style: none;
     position: fixed;
-    /* background-color: rgb(31, 30, 30); */
+    background-color: rgb(31, 30, 30);
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -102,7 +102,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: rgba(240,248, 255, 0.021) ;
-    /* font-size: 10rem; */
+    font-size: 10rem;
     letter-spacing: 50px;
     z-index: -1;
     transition: .3s ease letter-spacing;
@@ -123,6 +123,10 @@ span {
 }
 
 #header .nav-list ul li a.active:hover {
+    font-size: 1rem;
+}
+
+#header .nav-list ul a.active::after {
     font-size: 1rem;
 }
 
@@ -420,9 +424,24 @@ span {
 }
 
 .about_imag img {
-    border-radius: 6%;
+    border-radius: 2%;
     width: 450px;
     height: 450px;
+}
+
+.about_content .about_imag {
+    position: relative;
+}
+
+.about_content .about_imag::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 40px;
+    height: 97%;
+    width: 86%;
+    border: 4px solid #94618E;
+    z-index: -1;
 }
 
 .top-img {
