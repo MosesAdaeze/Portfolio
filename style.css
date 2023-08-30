@@ -639,7 +639,6 @@ span {
 
  /* END CONTACT SECTION ---------  */
 
-
 /* footer */
 .footer {
     margin-top: 10rem;
@@ -658,10 +657,6 @@ span {
 
 .footer-title span {
     color: #94618E;
-}
-
-.footer-details {
-    margin: 0 10%;
 }
 
 .footer-title {
@@ -683,9 +678,9 @@ span {
     padding-bottom: 3rem;
 }
 
-@media (max-width: 982px) {
-    .footer-content img {
-        width: 37%;
+@media (max-width: 986px) {
+    .image img {
+        width: 42%;
     }
 }
 
@@ -693,6 +688,10 @@ span {
     .footer-content {
         flex-direction: column;
         margin-bottom: 2px;
+    }
+
+    .image img {
+        width: 35%;
     }
 }
 
