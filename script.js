@@ -14,7 +14,7 @@ menu_item.forEach(item=>{
         mobile_menu.classList.toggle('active');
     });
 });
-
+// Nav bar menu .
 
 /// toggle Light mode and dark mode.
 
