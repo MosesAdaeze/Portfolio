@@ -396,7 +396,7 @@ span {
 
 /* End .service */
 
-/* recent section */
+/* -------- RECENT PROJECT SECTION ------------  */
 .projects {
     margin-top: 4rem;
     padding: 0 10% 5% 10%;
@@ -424,10 +424,36 @@ span {
     text-transform: capitalize;
 }
 
-/* end recent section */
+/* --------------- MEDIA QUERY - PROJECT SECTION -----------------  */
+@media (max-width: 1303px) {
+    .projects_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1600px) {
+    .projects {
+        padding: 0 8% 5% 8%;
+    }
+}
+
+@media (max-width: 678px) {
+    .projects_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
-/* ABOUT MEsection */
+
+
+
+
+
+
+
+/* ----------------- END RECENT PROJECT SECTION -------------------  */
+
+/* ----------------- ABOUT SECTION --------------  */
 #about_container {
     padding-top: 8rem;
 }
@@ -505,7 +531,7 @@ span {
 }
 
 
-/* ----- RWD ABOUT SECTION ---------------  */
+/* ----- MEDIA QUERY (RWD) ABOUT SECTION ---------------  */
 @media (max-width: 1274px) {
     #about_container {
         padding-top: 5rem;
@@ -545,6 +571,7 @@ span {
     }
 }
 /* ---------------- END ABOUT SECTION ---------------  */
+
 
 /* -------------- ICON NOTE SECTION ------------  */
 .iconNote {
