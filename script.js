@@ -16,12 +16,7 @@ menu_item.forEach(item=>{
 });
 // Nav bar menu .
 
-//NAV BAR SCROLL.
-let scroll_header = document.querySelector('.header');
 
-window.addEventListener('scroll', () => {
-    scroll_header.classList.toggle('shadow', window.scrollY > 0);
-});
 
 /// toggle Light mode and dark mode.
 

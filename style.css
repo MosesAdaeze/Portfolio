@@ -51,24 +51,19 @@ span {
     font-weight: 2000;
 }
 
-.header {
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
-    /* background-color: transparent; */
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    transition: 0.5s;
-    /* z-index: 999;
+#header {
+    /* box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2); */
+    z-index: 999;
+    transition: all 0.7s ease;
     position: sticky;
     top: 0;
-    left: 0; */
+    left: 0;
 }
 
-.header.shadow {
+/* .header.shadow {
     background-color: #061422;
     position: fixed;
-}
+} */
 
 #header .nav-bar {
     display: flex;
@@ -78,6 +73,13 @@ span {
     height: 100%;
     max-width: 1600px;
     padding: 1.5% 3rem 1.5% 4rem;
+
+    /* width: 100%;
+    transition: 0.5s;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0; */
 }
 
 #header .nav-list ul {
@@ -350,6 +352,107 @@ span {
 }
 
 /* ENd Home section  */
+/* PROJECT SECTION  */
+article {
+    margin-top: 4%;
+    display: flex;
+    padding: 0 85px;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    min-height: 80vh;
+    background: #49274A;
+}
+
+article h1{
+    margin: auto;
+    text-align: center;
+}
+
+.project_wrapper {
+    margin-bottom: 6%;
+    max-width: 1660px;
+    position: relative;
+}
+
+.project_title {
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.project_title h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3pt;
+}
+
+.project_title p {
+    font-style: oblique;
+}
+
+
+.project_wrapper i {
+    color: black;
+    top: 70%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.project_wrapper i:first-child {
+    left: -23px;
+}
+
+.project_wrapper i:last-child {
+    right: -23px;
+}
+
+.project_wrapper .project_content {
+    /* font-size: 0px; */
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.project_content img {
+    height: 340px;
+    object-fit: cover;
+    width: calc(100% / 3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* services */
 #services {
