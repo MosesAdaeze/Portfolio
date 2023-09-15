@@ -16,6 +16,42 @@ menu_item.forEach(item=>{
 });
 // Nav bar menu .
 
+// IMAGE SLIDER - RECENT PROJECT SECTION 
+const project = document.querySelector(".project_content");
+
+let isDragStart = false, prevPageX, prevScrollLeft;
+
+const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = project.scrollLeft;
+}
+
+// let isDragStart = false;
+
+// const dragStart = () => {
+//     isDragStart = true;
+// }
+
+const dragging = (e) => {
+    if(!isDragStart) return;
+    e.preventDefault();
+    // project.scrollLeft = e.pageX;
+    let positionDiff = e.pageX - prevPageX;
+    project.scrollLeft = prevScrollLeft - positionDiff; 
+}
+
+const dragStop = () => {
+    isDragStart = false;
+}
+
+// project.addEventListener("mousemove", isDragStart);
+project.addEventListener("mousemove", dragStart);
+project.addEventListener("mousemove", dragging);
+project.addEventListener("mousemove", dragStop);
+
+
+
 
 
 /// toggle Light mode and dark mode.
