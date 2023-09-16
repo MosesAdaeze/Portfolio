@@ -375,12 +375,6 @@ article h1{
     position: relative;
 }
 
-.project_text {
-    margin-top: 1%;
-    display: flex;
-    justify-content: space-around;
-}
-
 .project_title {
     text-align: center;
     margin-bottom: 6%;

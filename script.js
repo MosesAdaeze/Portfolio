@@ -45,7 +45,7 @@ const dragStop = () => {
     isDragStart = false;
 }
 
-// project.addEventListener("mousemove", isDragStart);
+project.addEventListener("mousemove", !isDragStart);
 project.addEventListener("mousemove", dragStart);
 project.addEventListener("mousemove", dragging);
 project.addEventListener("mousemove", dragStop);
