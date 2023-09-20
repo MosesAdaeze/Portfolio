@@ -17,40 +17,68 @@ menu_item.forEach(item=>{
 // Nav bar menu .
 
 // IMAGE SLIDER - RECENT PROJECT SECTION 
-const project = document.querySelector(".project_content");
+const project_content = document.querySelector(".project_content");
 
-let isDragStart = false, prevPageX, prevScrollLeft;
-
-const dragStart = (e) => {
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft = project.scrollLeft;
-}
-
-// let isDragStart = false;
-
-// const dragStart = () => {
-//     isDragStart = true;
+// const dragging = (e) => {
+//     project.scrollLeft = e.pageX;
 // }
+
+// project.addEventListener("mousemove", dragging);
+
+// let isDragStart = false, prevPageX, prevScrollLeft;
+
+// const dragStart = (e) => {
+//     isDragStart = true;
+//     prevPageX = e.pageX;
+//     prevScrollLeft = project.scrollLeft;
+// }
+
+let isDragStart = false;
+
+const dragStart = () => {
+    isDragStart = true;
+}
 
 const dragging = (e) => {
     if(!isDragStart) return;
-    e.preventDefault();
-    // project.scrollLeft = e.pageX;
-    let positionDiff = e.pageX - prevPageX;
-    project.scrollLeft = prevScrollLeft - positionDiff; 
+    project_content.scrollLeft = e.pageX;
+    // e.preventDefault();
+
+    // let positionDiff = e.pageX - prevPageX;
+    // project.scrollLeft = prevScrollLeft - positionDiff; 
 }
 
-const dragStop = () => {
-    isDragStart = false;
-}
+// const dragStop = () => {
+//     isDragStart = false;
+// }
 
-project.addEventListener("mousemove", !isDragStart);
-project.addEventListener("mousemove", dragStart);
-project.addEventListener("mousemove", dragging);
-project.addEventListener("mousemove", dragStop);
+// project.addEventListener("mousemove", !isDragStart);
+project_content.addEventListener("mousedown", dragStart);
+project_content.addEventListener("mousemove", dragging);
+// project.addEventListener("mousemove", dragStop);
 
 
+
+// window.addEventListener('DOMContentLoaded', () =>{
+//     document.body.style.visibility = 'visible';
+//   });
+
+
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         console.log(entry)
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('show');
+//         } else {
+//             entry.target.classList.remove('show');
+//         }
+
+//     });
+// });
+
+
+// const hiddenElements = document.querySelectorAll('.hidden');
+// hiddenElements.forEach((el) => observer.observe(el));
 
 
 

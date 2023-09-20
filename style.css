@@ -12,6 +12,16 @@
     /* background-color: #061422; */
 }
 
+html ::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: black;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #94618E;
+    border-radius: 5rem;
+}
+
 body {
     background-color: #061422;
     color: #DDE6ED;
@@ -22,6 +32,14 @@ button {
     color: #DDE6ED;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+}
 
 /* head */
 .head {
