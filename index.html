@@ -108,6 +108,34 @@
 
 <!-- ---------------------- END RECENT PROJECT SECTION -------------------- -->
 
+<div class="slider">
+    <div class="slides">
+        <img src="image/project-images/bagshop.png" alt="Image 1">
+        <img src="image/project-images/cakeshop.png" alt="Image 2">
+        <img src="image/project-images/clothsell.png" alt="Image 3">
+        <!-- <img src="image/project-images/foodshop.png" alt="Image 4"> -->
+        <!-- Add more images as needed -->
+    </div>
+</div>
+<style>
+    .slider {
+width: 80%;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+}
+
+.slides {
+display: flex;
+transition: transform 0.3s ease-in-out;
+}
+
+.slides img {
+width: 100%;
+height: auto;
+user-drag: none; /* Disable browser's default image dragging */
+}
+</style>
 
 
     <!-- ---------------------- FOOTER SECTION -------------------- -->
@@ -145,6 +173,7 @@
 
        </section>
        <!-- ----------------------FOOTER SECTION -------------------- -->
+      
 
     
     <script defer src="animate.js"></script>
