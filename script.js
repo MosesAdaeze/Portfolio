@@ -16,8 +16,59 @@ menu_item.forEach(item=>{
 });
 // Nav bar menu .
 
-// IMAGE SLIDER - RECENT PROJECT SECTION 
-const project_content = document.querySelector(".project_content");
+// IMAGE SLIDER - RECENT PROJECT SECTION 2
+class DragScroll {
+    constructor(obj) {
+        this.el = document.querySelector(obj.el);
+        this.wrap = document.querySelector(obl.wrap);
+        this.items = document.querySelector(obj.items);
+        this.bar = document.querySelector(obj.bar);
+        this.init();
+    }
+
+    init() {
+        this.progress - 0
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const project_content = document.querySelector("projectcontent");
 
 // const dragging = (e) => {
 //     project.scrollLeft = e.pageX;
