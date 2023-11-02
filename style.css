@@ -379,7 +379,7 @@ span {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .slider {
@@ -387,7 +387,7 @@ span {
     cursor: grab;
 }
 
-.slider-wrapper {
+.slider_wrapper {
     white-space: nowrap;
 }
 
