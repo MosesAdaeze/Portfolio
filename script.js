@@ -17,6 +17,36 @@ menu_item.forEach(item=>{
 // Nav bar menu .
 
 // IMAGE SLIDER - RECENT PROJECT SECTION 2
+let sidebar = document.getElementsByClassName("sidebar")[0];
+let sidebar_content = document.getElementsByClassName("content_wrapper")[0];
+
+window.onscroll = () => {
+    let scrollTop = window.scrollY; // current scroll position
+    let viewportHeight = window.innerHeight; //viewport height
+    let contentHeight = sidebar_content.getBoundingClientRect().height; // current content height
+    let sidebarTop = sidebar.getBoundingClientRect().top + window.pageYOffset; //distance from top to sidebar
+
+}
+if(scrollTop >= contentHeight - viewportHeight + sidebarTop)
+if(scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+    sidebar_content.style.transform = `translateY(-${contentHeight - viewportHeight + sidebarTop}px)`;
+    sidebar_content.style.position = "fixed";
+  }
+  else {
+    sidebar_content.style.transform = "";
+    sidebar_content.style.position = "";
+  }
+
+
+
+
+
+
+
+
+
+
+
 class DragScroll {
     constructor(obj) {
         this.el = document.querySelector(obj.el);
