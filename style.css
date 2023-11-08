@@ -374,11 +374,68 @@ span {
 
 
 /* ------------------ PROJECT SECTION ------------------- */
+.pro-container {
+    width: 80%;
+    margin: 50px auto;
+    clear: both;
+    background-color: #9ec6e2;
+}
+
+.pro-container::before, .pro-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.right {
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+.right div {
+    background-color: #94618E;
+    height: 250px;
+}
+
+.right div + div {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .project_content {
     display: flex;
     /* align-items: center; */
     justify-content: center;
 }
+
+.sticky {
+    width: 30%;
+    height: 100%;
+    background-color: #49274A;
+}
+
+.sticky h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .project_content h1{
     margin-top: 20%;
     position: sticky;
