@@ -95,6 +95,7 @@ span {
     width: 100%;
     height: 100%;
     max-width: 1700px;
+    /* padding: 0 0.5rem 0 5rem; */
     padding: 1.5% 0.5rem 1.5% 5rem;
 }
 
@@ -271,7 +272,8 @@ span {
     }
 
     #header .nav-bar {
-        padding: 1.5% 2.5rem 1.5% 4rem;
+        /* padding: 1.5% 2.5rem 1.5% 4rem; */
+        padding: 0.8% 2.5rem 0.3% 4rem;
     }
 
 }
@@ -376,9 +378,13 @@ span {
 /* ------------------ PROJECT SECTION ------------------- */
 .pro-container {
     width: 80%;
-    margin: 50px auto;
+    display: flex;
+    /* gap: 14rem; */
+    justify-content: flex-end;
+    margin: 6rem 0 0 0;
+    /* margin-left: 8rem; */
+    /* margin: 8rem 20rem 2rem 20rem; */
     clear: both;
-    background-color: #9ec6e2;
 }
 
 .pro-container::before, .pro-container::after {
@@ -388,24 +394,86 @@ span {
 }
 
 .right {
-    width: 750px;
-    display: inline-block;
+    /* width: 610px; */
+    width: 50%;
+    /* display: inline-block; */
     vertical-align: top;
-    float: right;
+    transition: all ease;
+    /* float: right; */
 }
 
 .right div {
     background-color: #94618E;
+    height: 190px;
+    padding: 2.3rem;
+    transition: transform .2s;
+}
+
+.right div:hover {
+    transform: scale(1.1);
+}
+
+.right a {
+    color: white;
+}
+
+.right h5 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.right h3 {
+    font-size: 1rem;
+}
+
+.right p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.right a span {
+    line-height: 3;
+    color: white;
+}
+
+.right div + a + div {
+    margin-top: 20px;
+}
+
+.left {
+    width: 520px;
     height: 250px;
+    position:sticky;
+    top: 50px;
 }
 
-.right div + div {
-    margin-top: 50px;
+.left h1 {
+    font-size: 4rem;
+    letter-spacing: 6px;
+    line-height: 1.3;
+    text-shadow:#0000;
+    font-weight: bold;
 }
 
+.left h5 {
+    word-spacing: 3px;
+}
 
-
-
+@media (max-width: 1050px) {
+    .pro-container {
+        flex-direction: column;
+        align-items: center;
+        /* margin: auto; */
+        /* justify-content: flex-end; */
+    }
+    .left {
+        position: relative;
+    }
+    .right {
+        width: 100%;
+    }
+}
 
 
 
