@@ -377,14 +377,12 @@ span {
 
 /* ------------------ PROJECT SECTION ------------------- */
 .projectFile_container {
-    width: 80%;
+    max-width: 1600px;
+    margin-top: 6rem;
+    margin-left: 8%;
+    margin-right: 5%;
     display: flex;
-    /* gap: 14rem; */
-    justify-content: flex-end;
-    margin: 6rem 0 0 0;
-    /* margin-left: 8rem; */
-    /* margin: 8rem 20rem 2rem 20rem; */
-    clear: both;
+    justify-content: space-around;
 }
 
 .pro-container::before, .pro-container::after {
@@ -394,10 +392,11 @@ span {
 }
 
 .right {
-    /* width: 610px; */
-    width: 50%;
+    width: 700px;
+    /* width: 100%; */
+    /* width: 40%; */
     /* display: inline-block; */
-    vertical-align: top;
+    /* vertical-align: top; */
     transition: all ease;
     /* float: right; */
 }
@@ -409,9 +408,9 @@ span {
     transition: transform .2s;
 }
 
-.right div:hover {
+/* .right div:hover {
     transform: scale(1.1);
-}
+} */
 
 .right a {
     color: white;
@@ -440,14 +439,14 @@ span {
 .right div + a + div {
     margin-top: 20px;
 }
-
 .left {
-    width: 520px;
-    height: 250px;
-    position:sticky;
+    /* width: 30%; */
+    height: 20%;
+    /* background-color: #9ec6e2; */
+    padding: 3.5rem;
+    position: sticky;
     top: 50px;
 }
-
 .left h1 {
     font-size: 4rem;
     letter-spacing: 6px;
@@ -460,18 +459,45 @@ span {
     word-spacing: 3px;
 }
 
+@media (max-width: 1540px) {
+    .projectFile_container {
+        margin-left: 3%;
+    }
+
+    .right {
+        width: 810px;
+    }
+
+    .right div {
+        height: 210px;
+    }
+
+    .left h1 {
+        font-size: 3rem;
+    }
+}
 @media (max-width: 1050px) {
-    .pro-container {
-        flex-direction: column;
-        align-items: center;
-        /* margin: auto; */
-        /* justify-content: flex-end; */
+    .projectFile_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin: 0 12% 0 12%;
     }
     .left {
         position: relative;
+        text-align: center;
     }
     .right {
         width: 100%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .right div:hover {
+        transform: scale(1.1);
+    }
+    .projectFile_container {
+        margin: 0 12% 0 12%;
     }
 }
 
