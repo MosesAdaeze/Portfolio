@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
 });
 
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .nav li a');
+let navLinks = document.querySelectorAll('header .nav-list ul a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -35,7 +35,7 @@ window.onscroll = () => {
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header .nav li a[href*=' + id + ']').classList.add('active');
+                document.querySelector('header .nav-list ul a[href*=' + id + ']').classList.add('active');
             });
         };
     });
