@@ -150,13 +150,13 @@ span {
     transition: .3s ease letter-spacing;
 }
 
-#header .nav-list ul a.active {
+#header .nav li a.active {
     color: #49274A;
 }
 
-#header .nav-list ul a.active {
+/* #header .nav-list ul a.active {
     color: #49274A;
-}
+} */
 
 #header .nav-list ul li:hover a::after {
     transform: translate(-50%, -50%) scale(1);
